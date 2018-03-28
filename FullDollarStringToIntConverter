@@ -7,7 +7,7 @@ System.out.println(value);
 try {
 	int intValue = Integer.parseInt(test);
 	System.out.println(intValue);
-} catch (Exception e) {
+} catch (Exception ee) {
 	System.out.println("Not a valid full $ amount: " + test);
 }
 
