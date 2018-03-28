@@ -1,0 +1,27 @@
+// Simple Java convert full $amount (not decimal amount) string to integer
+
+String value = "$100"; // needs to be in format "$d" where d is an integer
+value = value.substring(1); // removes $
+System.out.println(value);
+		
+try {
+	int intValue = Integer.parseInt(test);
+	System.out.println(intValue);
+} catch (Exception e) {
+	System.out.println("Not a valid full $ amount: " + test);
+}
+
+/*
+
+valid results
+String value = "$100";
+String value = "$-100";
+String value = "$0";
+
+invalid results
+String value = "$100.0";
+String value = "$$100";
+String value = "$";
+String value = "-$100";
+
+*/
