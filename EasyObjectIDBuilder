@@ -12,6 +12,6 @@ public class IDGenerator {
     }
     
     public String getID() {
-      return this.id; // returns "ID100000"
+      return this.id;
     }
 }
