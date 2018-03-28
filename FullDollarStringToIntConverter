@@ -5,8 +5,10 @@ value = value.substring(1); // removes $
 System.out.println(value);
 		
 try {
-	int intValue = Integer.parseInt(test);
-	System.out.println(intValue);
+	if (value.startsWith("$")) {
+		int intValue = Integer.parseInt(test);
+		System.out.println(intValue);
+	}
 } catch (Exception ee) {
 	System.out.println("Not a valid full $ amount: " + test);
 }
