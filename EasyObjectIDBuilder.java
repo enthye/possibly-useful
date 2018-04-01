@@ -3,7 +3,7 @@
 // Author: enthye
 
 public class IDGenerator {
-    private static int idCount = 100000; // static field works independently of each instance
+    private static int idCount = 100000; // static field works independently of each instance, can change this starting value
     private String id;
     
     public IDGenerator() {
